@@ -47,7 +47,7 @@ import RecommendationsPage from "../modules/doctor/pages/RecommendationsPage";
 import MilestonesPage from "../modules/mother/pages/MilestonesPage";
 
 
-import DoctorsPage from "../modules/public/DoctorsPage";
+import DoctorsPage from "../modules/public/Doctorspage";
 import MotherDoctorsPage from "../modules/mother/pages/MotherDoctorsPage";
 
 import RecommendationPage from "../modules/mother/pages/RecommendationsPage";
