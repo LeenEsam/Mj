@@ -47,7 +47,7 @@ import RecommendationsPage from "../modules/doctor/pages/RecommendationsPage";
 import MilestonesPage from "../modules/mother/pages/MilestonesPage";
 
 
-import DoctorsPage from "../modules/public/Doctorspage";
+import Doctorspage from "../modules/public/Doctorspage";
 import MotherDoctorsPage from "../modules/mother/pages/MotherDoctorsPage";
 
 import RecommendationPage from "../modules/mother/pages/RecommendationsPage";
@@ -79,7 +79,7 @@ export default function AppRouter() {
 <Route path="/services" element={<Services />} />
       <Route path="/about" element={<AboutPage />}
 />
-<Route path="/doctors" element={<DoctorsPage />} />
+<Route path="/doctors" element={<Doctorspage />} />
       {/* Doctor */}
       <Route path="/doctor/*" element={
         <ProtectedRoute>
