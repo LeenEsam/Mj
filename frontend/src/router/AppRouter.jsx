@@ -24,7 +24,7 @@ import VendorModule    from "../modules/vendor/pages/VendorDashboard";
 
 import MotherCompleteProfile  from "../modules/mother/pages/CompleteProfile";
 
-import ChildDetailPage from "../modules/mother/pages/Child Detail Page";
+import ChildDetailPage from "../modules/mother/pages/ChildDetailPage";
 
 import AdminModule from "../modules/admin/components/AdminModule";
 import AdminLogin  from "../modules/admin/pages/AdminLogin";
