@@ -6,7 +6,7 @@ import { useState } from "react";
 import { useAdminStats, useAdminUsers } from "../../../core/hooks/useAdminData";
 import { supabase } from "../../../services/supabaseClient";
 
-import UserDetailModal from "../components/UserDetailModal";
+import Userdetailmodal from "../components/Userdetailmodal";
 
 export default function AdminDoctors() {
   const { stats } = useAdminStats();
@@ -31,7 +31,7 @@ export default function AdminDoctors() {
 
   return (
     <AdminLayout stats={stats}>
-      {viewId && <UserDetailModal userId={viewId} role="doctor" onClose={()=>setViewId(null)}/>}
+      {viewId && <Userdetailmodal userId={viewId} role="doctor" onClose={()=>setViewId(null)}/>}
 
       <div className="adm-stats-grid" style={{gridTemplateColumns:"repeat(3,1fr)",marginBottom:16}}>
         <div className="adm-stat purple">

@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useAdminStats, useAdminUsers } from "../../../core/hooks/useAdminData";
 import { supabase } from "../../../services/supabaseClient";
 
-import UserDetailModal from "../components/UserDetailModal";
+import Userdetailmodal from "../components/Userdetailmodal";
 
 const COLORS = ["#f472b6","#a78bfa","#34d399","#60a5fa","#fbbf24","#fb7185"];
 
@@ -33,7 +33,7 @@ export default function AdminMothers() {
 
   return (
     <AdminLayout stats={stats}>
-      {viewId && <UserDetailModal userId={viewId} role="mother" onClose={()=>setViewId(null)}/>}
+      {viewId && <Userdetailmodal userId={viewId} role="mother" onClose={()=>setViewId(null)}/>}
 
       <div className="adm-stats-grid" style={{gridTemplateColumns:"repeat(3,1fr)",marginBottom:16}}>
         <div className="adm-stat pink">
