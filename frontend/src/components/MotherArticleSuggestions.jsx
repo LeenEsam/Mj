@@ -314,7 +314,7 @@ export default function MotherArticleSuggestions({ motherId }) {
 // frontend/src/components/MotherArticleSuggestions.jsx
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-
+const API_BASE = import.meta.env.VITE_API_URL || "";
 export default function MotherArticleSuggestions({ motherId }) {
   const [data,    setData]    = useState(null);
   const [loading, setLoading] = useState(false);
@@ -332,7 +332,7 @@ export default function MotherArticleSuggestions({ motherId }) {
     setData(null);
 
     try {
-      const response = await fetch("/api/chatbot/mother-articles", {
+    const response = await fetch(`${API_BASE}/api/chatbot/mother-articles`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ motherId }),
