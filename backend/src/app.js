@@ -40,6 +40,7 @@ app.use(
       "http://localhost:5173", // Vite dev server
       "http://localhost:3000",
       "http://localhost:5174",
+      "https://mj-xi-three.vercel.app/",
       // أضف هنا domain الـ production إن وُجد
       /\.replit\.dev$/, // يسمح لأي subdomain على replit
     ],
