@@ -7,7 +7,8 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "http://localhost:3000", // ← غيّر 3000 لنفس port الباكند لديك
+        //target: "http://localhost:3000", // ← غيّر 3000 لنفس port الباكند لديك
+       target: "https://mj-xi-three.vercel.app/", 
         changeOrigin: true,
       },
     },
